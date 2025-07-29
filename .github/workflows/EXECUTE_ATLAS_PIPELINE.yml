@@ -39,7 +39,7 @@ jobs:
           input: ${{ toJSON(inputs) }}
 
       - name: Execute Atlas Pipeline via composite action
-        uses: Netcracker/qubership-pipelines-declarative-executor/actions/execute_atlas_pipeline@v1.0.0
+        uses: Netcracker/qubership-pipelines-declarative-executor/actions/execute_atlas_pipeline@main
         with:
           PIPELINE_DATA: ${{ inputs.PIPELINE_DATA }}
           PIPELINE_VARS: ${{ inputs.PIPELINE_VARS }}
